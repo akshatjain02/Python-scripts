@@ -1,8 +1,8 @@
-import requests
+from urllib import request
 
 goog_url = 'https://query1.finance.yahoo.com/v7/finance/download/GOOG?period1=1497390033&period2=1499982033&interval=1d&events=history&crumb=GD0Y0HOG1n8'
-def download(csv_url):
-    response = requests.urlopen(csv_url)
+def downloader(csv_url):
+    response = request.urlopen(csv_url)
     csv_str = str(response.read())
     lines = csv_str.split("\\n")
     dest_url = r'goog.csv'
@@ -12,4 +12,4 @@ def download(csv_url):
     fx.close()
 
 
-download(goog_url)
+downloader(goog_url)

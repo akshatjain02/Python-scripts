@@ -1,2 +1,2 @@
-# Web-crawler
-Python script that crawls a particular page and prints the title and link of the elements. (Learning)
+# Learning python
+A series of python scripts created and pulled with an intention to learn Python and github.
